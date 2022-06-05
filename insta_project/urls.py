@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from insta import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('insta/', include('insta.urls')),
     path(r'', include('insta.urls')),
-    # path(r'^register/$', views.register, name='register'),
 ]
