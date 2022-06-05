@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('insta/', include('insta.urls')),
     path(r'', include('insta.urls')),
+    # path(r'^register/$', views.register, name='register'),
 ]
