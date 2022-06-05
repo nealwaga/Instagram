@@ -19,4 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('insta/', include('insta.urls')),
+    path(r'', include('insta.urls')),
 ]
