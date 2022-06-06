@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 from post.models import Post
 from django.db.models.signals import post_save, post_delete
 from notification.models import Notification
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 class Comment(models.Model):
