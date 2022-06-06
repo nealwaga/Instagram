@@ -3,7 +3,7 @@ from authy.models import Profile
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 
-
+# Create forms here
 class EditProfileForm(forms.ModelForm):
     image = forms.ImageField(required=True)
     first_name = forms.CharField(widget=forms.TextInput(attrs={'class': 'input', 'placeholder': 'First Name'}), required=True)

@@ -4,7 +4,7 @@ from django.contrib.auth import views as auth_views
 from django.urls import reverse_lazy
 from authy.views import UserProfile, EditProfile
 
-
+#Craete url patterns here
 urlpatterns = [
     # Profile Section
     path('profile/edit', EditProfile, name="editprofile"),
