@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-mrm&2g(#r*5+_3i5hw7kn8-uxo+!j@fbd_e$e7&juf$$0!(t9w'
+SECRET_KEY = 'django-insecure-dkc%kw4w2gd=)%wavt%h&g^8hp+c&tad_dify%(#+jrez8b78a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -39,26 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    #own
-    'insta',
-    'cloudinary',
+    #mine
     'authy',
-    'post',
     'comment',
-    'bootstrap4',
-    'crispy_forms',
+    'directs',
+    'notification',
+    'post',
 ]
-
-#Cloudinary Classes
-import cloudinary
-import cloudinary.uploader
-import cloudinary.api
-# adding config
-cloudinary.config( 
-  cloud_name = "dxv5ismd8", 
-  api_key = "839698641748619", 
-  api_secret = "T_Mx9oL-rqgmEoDzyimZqc87kmg" 
-)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -96,10 +83,8 @@ WSGI_APPLICATION = 'insta_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'tribune',
-        'USER': 'neal',
-        'PASSWORD':'Wneal9.',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -128,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Africa/Nairobi'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
@@ -139,13 +124,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
-
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
