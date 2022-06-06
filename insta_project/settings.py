@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'post',
     'commment',
     'bootstrap4',
+    'crispy_forms',
 ]
 
 #Cloudinary Classes

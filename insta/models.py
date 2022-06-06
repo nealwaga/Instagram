@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
 # Create models here
-# class Profile(models.Model):
+# class UserProfile(models.Model):
 #     user = models.OneToOneField(User, related_name='profile', on_delete=models.CASCADE)
 #     profile_pic = CloudinaryField('profile_pic', null=True)
 #     first_name = models.CharField(max_length=200, null=True, blank=True)
