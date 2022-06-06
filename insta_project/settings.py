@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'authy',
     'post',
-    'commment',
+    'comment',
     'bootstrap4',
     'crispy_forms',
 ]
