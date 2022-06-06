@@ -37,15 +37,19 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    #own
     'insta',
     'cloudinary',
+    'auth',
+    'post',
+    'commment',
 ]
 
 #Cloudinary Classes
 import cloudinary
 import cloudinary.uploader
 import cloudinary.api
-
 # adding config
 cloudinary.config( 
   cloud_name = "dxv5ismd8", 
