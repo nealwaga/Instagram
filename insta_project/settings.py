@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'directs',
     'notification',
     'post',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
