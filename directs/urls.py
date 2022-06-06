@@ -1,6 +1,7 @@
 from directs.views import inbox, Directs, SendDirect, UserSearch, NewConversation
 from django.urls import path
 
+#Create urls here
 urlpatterns = [
     path('', inbox, name="message"),
     path('direct/<username>', Directs, name="directs"),
