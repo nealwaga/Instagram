@@ -14,7 +14,8 @@ from cloudinary.models import CloudinaryField
 # Create your models here.
 class Profile(models.Model):
     user = models.OneToOneField(User, related_name='profile', on_delete=models.CASCADE)
-    image = CloudinaryField(upload_to="profile_pciture", null=True, default="default.jpg")
+    # image = CloudinaryField("profile_pciture")
+    image = models.ImageField(upload_to="profile_pciture", null=True, default="default.jpg")
     first_name = models.CharField(max_length=200, null=True, blank=True)
     last_name = models.CharField(max_length=200, null=True, blank=True)
     bio = models.CharField(max_length=200, null=True, blank=True)

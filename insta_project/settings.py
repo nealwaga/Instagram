@@ -47,19 +47,19 @@ INSTALLED_APPS = [
     'notification',
     'post',
     'crispy_forms',
-    'cloudinary',
+    # 'cloudinary',
 ]
 
-#Cloudinary Classes
-import cloudinary
-import cloudinary.uploader
-import cloudinary.api
-#adding config
-cloudinary.config(
-    cloud_name = 'dxv5ismd8',
-    api_key = '839698641748619',
-    api_secret = 'T_Mx9oL-rqgmEoDzyimZqc87kmg'
-)
+# Cloudinary Classes
+# import cloudinary
+# import cloudinary.uploader
+# import cloudinary.api
+# adding config
+# cloudinary.config(
+#     cloud_name = 'dxv5ismd8',
+#     api_key = '839698641748619',
+#     api_secret = 'T_Mx9oL-rqgmEoDzyimZqc87kmg'
+# )
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
