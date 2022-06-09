@@ -1,5 +1,5 @@
 # Instagram
-This is an application that allows users to sign up/login then post pictures, get followers, follow other users, like and comment on posts as well as update their profile.
+This is an application that emulates the popular application, Instagram. It allows users to sign up/login to post pictures, get followers, follow other users, like and comment on posts as well as update their own profile.
 
 ## Author
 > Neal Waga
